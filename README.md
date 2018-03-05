@@ -5,5 +5,5 @@
 * Install [Angular CLI](https://cli.angular.io/) globally on your machine
 * If you're reading this, you're proabably in the `test-video` directory. Great! Now travel into the `video-project` directory. 
 * In a command line of your choice, be sure you're in the root of `video-project` and type in the command `npm i`.
-* If you haven't fallen asleep yet, now type the command `ng serve`.
-* The project is now running at [localhost:4200](localhost:4200). 
+* If you haven't fallen asleep yet waiting for dependencies to load, type the command `ng serve`.
+* The project is now running at **localhost:4200**. 
