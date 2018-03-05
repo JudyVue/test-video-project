@@ -10,7 +10,6 @@ export class FileLinksService {
   private _url = '../assets/file-links.json';
 
   getFileLinks(): Observable<IFileLinks> {
-    console.log('inside getFileLinks?');
     return this.http.get<IFileLinks>(this._url);
   }
 

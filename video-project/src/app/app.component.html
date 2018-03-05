@@ -1,6 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
 <div id="myApp" #myApp>
+  <!-- we wait for the haveLinks boolean to be true because waiting on async HTTP call to the JSON file in the assets folder so we can load the appropriate video/images -->
   <div *ngIf="haveLinks">
     <div *ngIf="shouldShowVideo; then thenBlock; else elseBlock">
     </div>
@@ -16,7 +17,7 @@
         </video>
         <button 
           id="myButton"
-          (click)="skipVideo($event)"
+          (click)="skipVideo()"
         >
           SKIP THIS RIDICULOUS VIDEO
       </button>
@@ -24,7 +25,6 @@
       {{ this.setVideo(myVideo) }}
       {{ this.onVideoEnd(myVideo) }}
     </ng-template>
-
     <ng-template #elseBlock>
         {{  this.setBackgroundImage(myApp, this.fileLinks.img) }}
         <audio 
@@ -34,7 +34,6 @@
       </audio>
         <div id="imageContainer" #imageContainer>
             Want to know what an iguana sounds like? Click here.
-         
             <div 
               id="soundIconContainer"
               #soundIconContainer
