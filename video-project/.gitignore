@@ -1,7 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# video
-../src/app/assets/BigBuckBunny_320x180.mp4
+# video and sound
+*.mp4
 # compiled output
 /dist
 /dist-server
