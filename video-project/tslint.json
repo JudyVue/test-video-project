@@ -7,7 +7,6 @@
     "callable-types": true,
     "class-name": true,
     "comment-format": [
-      true,
       "check-space"
     ],
     "curly": true,
@@ -29,7 +28,6 @@
     "interface-over-type-literal": true,
     "label-position": true,
     "max-line-length": [
-      true,
       140
     ],
     "member-access": false,
@@ -55,7 +53,7 @@
       "trace"
     ],
     "no-construct": true,
-    "no-debugger": true,
+    "no-debugger": false,
     "no-duplicate-super": true,
     "no-empty": false,
     "no-empty-interface": true,
